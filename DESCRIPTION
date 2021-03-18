@@ -1,19 +1,20 @@
 Package: part2
-Title: What the Package Does (One Line, Title Case)
+Title: Project 3 Part 2
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Mutong",
+           family = "Zhang",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "mzhang98@uw.edu")
+Description: This package is the part 2 of project 3.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     readr,
-    magrittr
+    magrittr,
+    utf8
+Depends: 
+    R (>= 2.10)
