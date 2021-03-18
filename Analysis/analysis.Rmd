@@ -31,15 +31,12 @@ h4.date {
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-##Tutorial for \code{my_rf_cv}
-
-The code below predict \code{body_mass_g} using covariates \code{bill_length_mm}, \code{bill_depth_mm}, and \code{flipper_length_mm}.
-
 ```{r}
 my_penguins <- read.csv("C:/Users/mandy/OneDrive/Stats302/projects/project3_2/part2/Data/my_penguins.csv")
 source("C:/Users/mandy/OneDrive/Stats302/projects/project3_2/part2/R/my_rf_cv.R")
 rf <- vector()
 result <- data.frame()
+num <- 0
 for (k in c(2, 5, 10)) {
   for (i in 1:30) {
     result[num * 30 + i, 1] <- k
