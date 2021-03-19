@@ -18,6 +18,8 @@ Imports:
     utf8,
     palmerpenguins,
     dplyr,
-    randomForest
+    randomForest,
+    gapminder,
+    tibble
 Depends: 
     R (>= 2.10)
