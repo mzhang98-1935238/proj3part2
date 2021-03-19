@@ -61,6 +61,6 @@ ggsave("figure1.png", figure, path = "C:/Users/mandy/OneDrive/Stats302/projects/
 result_tidy <- cbind(result[1:30, 2], result[31:60, 2], result[61:90, 2])
 colnames(result_tidy) <- c("k = 2", "k = 5", "k = 10")
 saveRDS(result_tidy, file = "result.RDS")
-write_csv(as.data.frame(table), file = "mean vs. sd table")
+write_csv(as.data.frame(table), file = "table.csv")
 ```
 
