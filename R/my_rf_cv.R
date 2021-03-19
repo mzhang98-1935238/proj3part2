@@ -27,7 +27,7 @@ my_rf_cv <- function(k) {
   omit_penguins <- na.omit(my_penguins)
   # assign observations to folds 1,...,k with equal probability
   fold <- sample(rep(1:k, length = nrow(omit_penguins)))
-  data <- cbind(omit_penguins[3:6], fold)
+  data <- cbind(omit_penguins[4:7], fold)
   pred_mat <- matrix(NA, nrow(data), 1)
   for (i in 1:k) {
     data_train <- data %>% filter(fold != i)
