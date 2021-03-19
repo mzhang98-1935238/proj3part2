@@ -32,7 +32,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-my_penguins <- read.csv("C:/Users/mandy/OneDrive/Stats302/projects/project3_2/part2/Data/my_penguins.csv")
 source("C:/Users/mandy/OneDrive/Stats302/projects/project3_2/part2/R/my_rf_cv.R")
 rf <- vector()
 result <- data.frame()

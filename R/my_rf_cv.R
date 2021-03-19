@@ -22,6 +22,7 @@ my_rf_cv <- function(k) {
   if (is.numeric(k) == FALSE) {
     stop("input k is non-numeric")
   }
+  my_penguins <- read.csv("C:/Users/mandy/OneDrive/Stats302/projects/project3_2/part2/Data/my_penguins.csv")
   # omit NAs in penguins
   omit_penguins <- na.omit(my_penguins)
   # assign observations to folds 1,...,k with equal probability
